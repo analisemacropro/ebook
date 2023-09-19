@@ -19,7 +19,7 @@ jobs:
         with:
           tinytex: true
 
-      - name: Publish to GitHub Pages (and render)
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
