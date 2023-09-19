@@ -1,5 +1,7 @@
-# Preface {.unnumbered}
+# Bem vindo(a)! {.unnumbered}
 
-This is a Quarto book.
+Seja bem vindo(a) ao ebook **O ciclo de análise de dados** produzido pela [**Análise Macro**](https://analisemacro.com.br/).
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+A demanda por análise de dados é cada vez mais crescente nas empresas, no governo e na academia. Existem muitos problemas que podem ser resolvidos usando a união correta de técnicas, habilidades, dados e ferramentas no dia a dia dos profissionais da área. Nesse ebook você vai aprender sobre um roteiro separado em etapas que agilizam o processo de analisar dados, facilitando a entrega de soluções baseadas em dados. Aprenda a metodologia de trabalho, as aplicações e exemplos de uso de análise de dados no mundo contemporâneo.
+
+Você pode ler a primeira versão deste ebook online, em PDF ou no formato epub.

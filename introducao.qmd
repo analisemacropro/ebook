@@ -1,0 +1,21 @@
+# Introdução
+
+Resolver problemas é uma tarefa central para quem trabalha na área de Dados, especialmente em análise de dados. 
+
+O papel do analista é utilizar suas habilidades em estatística, matemática, programação e outras, além da expertise da área, para resolver um problema utilizando dados. 
+
+Mas qual problema o Fernando, um analista de dados, vai resolver? 
+
+Definir o problema a ser resolvido e os objetivos da análise de dados é o primeiro passo fundamental para desenvolver um trabalho bem sucedido. 
+
+Sem saber o que é necessário resolver é difícil que qualquer solução desenvolvida atinja e resolva o problema. 
+
+É preciso muita sorte para produzir boas análises de dados sem se guiar por um propósito claro.
+
+Portanto, o primeiro passo é utilizar uma metodologia com processos e etapas bem definidas para analisar dados.
+
+Neste ebook vamos descrever que metodologia para analisar dados é essa, quais são as etapas gerais e como elas funcionam para resolver problemas reais. 
+
+Sem uma metodologia de trabalho é seguro dizer que o analista de dados está perdido numa selva de ferramentas, modelos e dados, lutando para sobreviver e tentando qualquer coisa a todo momento e a qualquer custo. 
+
+Ao seguir uma metodologia de trabalho, o analista estará guiado por uma bússola, o que diminui as chances de se perder no caminho e garante consistência de resultados no longo prazo.

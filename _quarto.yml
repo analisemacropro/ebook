@@ -2,22 +2,34 @@ project:
   type: book
 
 book:
-  title: "ebook"
-  author: "Norah Jones"
-  date: "9/19/2023"
+  title: "**O ciclo de análise de dados**"
+  subtitle: "Um roteiro completo para resolver problemas do dia a dia"
+  author: "**Análise Macro**"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    - introducao.qmd
+    - ciclo.qmd
+    - conclusao.qmd
+  site-url: https://analisemacro.com.br/
+  search: true
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook, linkedin]
+  output-file: "o-ciclo-de-analise-de-dados"
+  sidebar: 
+    logo: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png"
+    logo-alt: "Logotipo Análise Macro"
 
 format:
   html:
     theme: cosmo
+    toc-expand: true
+    lang: pt
   pdf:
     documentclass: scrreprt
+    lang: pt
+  epub:
+    toc: true
+    lang: pt
 
 
 

@@ -1,0 +1,7 @@
+# Conclusão
+
+O ciclo de análise de dados é vasto e complexo, mas ao mesmo tempo é uma metodologia poderosa para solucionar problemas usando dados. 
+
+O profissional que atua ou deseja atuar na área de dados precisa de diversas habilidades e conhecimentos técnicos e não técnicos, de uma ponta até a outra do ciclo, para agregar valor em uma empresa. 
+
+Neste ebook apresentamos uma visão geral sobre o processo de análise de dados, exemplos de aplicações e uso e as habilidades e ferramentas necessárias para trabalhar na área.
