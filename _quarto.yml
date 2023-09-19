@@ -12,7 +12,7 @@ book:
     - conclusao.qmd
   site-url: https://analisemacro.com.br/
   search: true
-  downloads: [pdf, epub]
+  downloads: [pdf, epub, docx]
   sharing: [twitter, facebook, linkedin]
   output-file: "o-ciclo-de-analise-de-dados"
   sidebar: 
@@ -30,6 +30,7 @@ format:
   epub:
     toc: true
     lang: pt
-
-
-
+  docx: 
+    toc: false
+    lang: pt
+    fig-width: 4.5
