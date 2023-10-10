@@ -16,12 +16,15 @@ book:
   sharing: [twitter, facebook, linkedin]
   output-file: "o-ciclo-de-analise-de-dados"
   sidebar: 
-    logo: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png"
+    logo: "imagens/logo_am.png"
     logo-alt: "Logotipo Análise Macro"
+  favicon: "imagens/favicon.png"
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - ciclo.scss
     toc-expand: true
     lang: pt
   pdf:
