@@ -5,3 +5,21 @@ O ciclo de análise de dados é vasto e complexo, mas ao mesmo tempo é uma meto
 O profissional que atua ou deseja atuar na área de dados precisa de diversas habilidades e conhecimentos técnicos e não técnicos, de uma ponta até a outra do ciclo, para agregar valor em uma empresa. 
 
 Neste ebook apresentamos uma visão geral sobre o processo de análise de dados, exemplos de aplicações e uso e as habilidades e ferramentas necessárias para trabalhar na área.
+
+## **Quer aprender mais?**
+
+[**Clique aqui para fazer seu cadastro no Boletim AM e baixar códigos de análise de dados**](https://analisemacro.com.br/boletim-am/), além de receber novos exercícios com exemplos reais envolvendo as áreas de:
+
+-   *Data Science*
+
+-   Econometria
+
+-   *Machine Learning*
+
+-   Macroeconomia Aplicada
+
+-   Finanças Quantitativas e
+
+-   Políticas Públicas
+
+Toda semana novos exercícios aplicados usando Python, diretamente no seu e-mail!

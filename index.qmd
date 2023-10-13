@@ -4,4 +4,6 @@ Seja bem vindo(a) ao ebook **O ciclo de análise de dados** produzido pela [**An
 
 A demanda por análise de dados é cada vez mais crescente nas empresas, no governo e na academia. Existem muitos problemas que podem ser resolvidos usando a união correta de técnicas, habilidades, dados e ferramentas no dia a dia dos profissionais da área. Nesse ebook você vai aprender sobre um roteiro separado em etapas que agilizam o processo de analisar dados, facilitando a entrega de soluções baseadas em dados. Aprenda a metodologia de trabalho, as aplicações e exemplos de uso de análise de dados no mundo contemporâneo.
 
+Para se aprofundar e aprender mais confira a formação [**Do Zero à Análise de Dados com Python**](https://analisemacro.com.br/formacao/do-zero-a-analise-de-dados-com-python/) da Análise Macro.
+
 Você pode ler a primeira versão deste ebook online, em PDF ou no formato epub.

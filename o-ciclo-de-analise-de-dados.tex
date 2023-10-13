@@ -1,0 +1,643 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  letterpaper,
+  paper=6in:9in,
+  pagesize=pdftex,
+  headinclude=on,
+  footinclude=on,
+  12pt]{scrbook}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\areaset[0.50in]{4.5in}{8in}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Índice}
+\else
+  \newcommand\contentsname{Índice}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Lista de Figuras}
+\else
+  \newcommand\listfigurename{Lista de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Lista de Tabelas}
+\else
+  \newcommand\listtablename{Lista de Tabelas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabela}
+\else
+  \newcommand\tablename{Tabela}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listagem}
+\newcommand*\listoflistings{\listof{codelisting}{Lista de Listagens}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{portuguese}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={O ciclo de análise de dados},
+  pdfauthor={Análise Macro},
+  pdflang={pt},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\usepackage{titling}
+\let\cleardoublepage\clearpage
+
+\title{\textbf{O ciclo de análise de dados}}
+\subtitle{Um roteiro completo para resolver problemas do dia a dia}
+\author{Um roteiro completo para resolver \\ problemas do dia a dia}
+\date{}
+
+\pretitle{%
+	\begin{center}
+		\LARGE
+		\includegraphics[width=4cm,height=6cm]{imagens/logo_am.png}\\[\bigskipamount]
+	}
+\posttitle{\end{center}}
+\begin{document}
+\frontmatter
+\maketitle
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+   showspaces = false,
+   showtabs = false,
+   breaksymbolleft={},
+   breaklines
+   % Note: setting commandchars=\\\{\} here will cause an error 
+}
+
+\renewcommand*\contentsname{Índice}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Bem vindo(a)!}\label{bem-vindoa}
+\addcontentsline{toc}{chapter}{Bem vindo(a)!}
+
+\markboth{Bem vindo(a)!}{Bem vindo(a)!}
+
+Seja bem vindo(a) ao ebook \textbf{O ciclo de análise de dados}
+produzido pela \href{https://analisemacro.com.br/}{\textbf{Análise
+Macro}}.
+
+A demanda por análise de dados é cada vez mais crescente nas empresas,
+no governo e na academia. Existem muitos problemas que podem ser
+resolvidos usando a união correta de técnicas, habilidades, dados e
+ferramentas no dia a dia dos profissionais da área. Nesse ebook você vai
+aprender sobre um roteiro separado em etapas que agilizam o processo de
+analisar dados, facilitando a entrega de soluções baseadas em dados.
+Aprenda a metodologia de trabalho, as aplicações e exemplos de uso de
+análise de dados no mundo contemporâneo.
+
+Para se aprofundar e aprender mais confira a formação
+\href{https://analisemacro.com.br/formacao/do-zero-a-analise-de-dados-com-python/}{\textbf{Do
+Zero à Análise de Dados com Python}} da Análise Macro.
+
+Você pode ler a primeira versão deste ebook online, em PDF ou no formato
+epub.
+
+\bookmarksetup{startatroot}
+
+\chapter{Introdução}\label{introduuxe7uxe3o}
+
+Resolver problemas é uma tarefa central para quem trabalha na área de
+Dados, especialmente em análise de dados.~
+
+O papel do analista é utilizar suas habilidades em estatística,
+matemática, programação e outras, além da \emph{expertise} da área, para
+resolver um problema utilizando dados.~
+
+Mas qual problema o Fernando, um analista de dados, vai resolver?~
+
+Definir o problema a ser resolvido e os objetivos da análise de dados é
+o primeiro passo fundamental para desenvolver um trabalho bem sucedido.~
+
+Sem saber o que é necessário resolver é difícil que qualquer solução
+desenvolvida atinja e resolva o problema.~
+
+É preciso muita sorte para produzir boas análises de dados sem se guiar
+por um propósito claro.
+
+Portanto, o primeiro passo é utilizar uma metodologia com processos e
+etapas bem definidas para analisar dados.
+
+Neste ebook vamos descrever:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  que metodologia para analisar dados é essa;
+\item
+  quais são as etapas gerais;
+\item
+  e como elas funcionam para resolver problemas reais.~
+\end{enumerate}
+
+Sem uma metodologia de trabalho é seguro dizer que o analista de dados
+está perdido numa selva de ferramentas, modelos e dados, lutando para
+sobreviver e tentando qualquer coisa a todo momento e a qualquer custo.~
+
+Ao seguir uma metodologia de trabalho, o analista estará guiado por uma
+bússola, o que diminui as chances de se perder no caminho e garante
+consistência de resultados no longo prazo.
+
+\bookmarksetup{startatroot}
+
+\chapter{O ciclo}\label{o-ciclo}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/ciclo_dados.png}
+
+}
+
+\end{figure}%
+
+O que chamamos de ciclo de análise de dados é uma metodologia de
+trabalho para otimizar e guiar o processo de analisar dados, desde a
+definição do problema a ser resolvido até a implementação da solução
+baseada em dados.~
+
+É um ciclo porque, na prática, resolver problemas com dados não é como
+caminhar em linha reta do ponto A até o ponto B.~
+
+O dia a dia de análise de dados é cheio de idas e vindas, tentativas e
+erros, pois há muitas pedras no caminho e algumas são difíceis de
+ultrapassar.~
+
+Algumas, dentre várias, dessas pedras no caminho de um analista de dados
+são:
+
+\begin{itemize}
+\item
+  Dados indisponíveis;
+\item
+  Dados incorretos;
+\item
+  Dados ausentes;
+\item
+  Objetivos e problemas indefinidos;
+\item
+  Entre outros.
+\end{itemize}
+
+Alguns destes obstáculos para analisar dados podem ser melhor
+contornados se houver uma visão clara do caminho a ser percorrido.~
+
+Dessa forma, o ciclo de análise de dados é como um mapa que o analista
+pode utilizar para pegar um problema, analisar os dados e entregar uma
+solução.
+
+\begin{description}
+\item[\textbf{Por exemplo:}]
+\emph{Se você é um analista econômico, o ciclo de análise de dados
+compreende todo o processo de extração, processamento, análise e
+apresentação de dados de conjuntura econômica, com vistas a fornecer
+informações atualizadas e relevantes para o seu público alvo.}
+\end{description}
+
+Para saber mais sobre análise econômica, o curso de
+\href{https://analisemacro.com.br/curso/analise-de-conjuntura-usando-python/}{\textbf{Análise
+de Conjuntura usando Python}} ensina todas estas etapas de maneira
+sistemática.
+
+Entender a fundo o ciclo de análise de dados é fundamental para
+conseguir entregar soluções e informações a partir de dados.~
+
+Portanto, um analista de dados deve ser capaz de mapear mentalmente,
+dado um contexto, essas etapas para desenvolver uma solução a partir de
+dados.
+
+Vamos dar uma olhada nas etapas?
+
+\section{Objetivo}\label{objetivo}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/objetivo_ex.png}
+
+}
+
+\end{figure}%
+
+É a primeira etapa de um projeto de análise de dados, onde há um
+contexto/situação na área de atuação do analista de onde surge um
+problema a ser resolvido.~
+
+É papel do analista de dados, com apoio de outros atores envolvidos,
+identificar esse problema de forma clara para prosseguir com uma solução
+analítica de dados com determinados objetivos.
+
+\begin{description}
+\item[\textbf{Por exemplo:}]
+\emph{Você é analista de dados na Netflix e o setor que monitora o
+engajamento do usuário (tempo de uso, nº de títulos assistidos, etc.) no
+serviço de streaming percebe uma queda em várias métricas, o que pode
+ser um prenúncio de cancelamento de assinaturas.}
+\end{description}
+
+Nesse caso o problema é a queda de engajamento e o objetivo poderia ser
+aumentar o engajamento com vistas a evitar cancelamento de assinaturas.
+
+Nessa etapa é fundamental a \emph{expertise} de negócio para definir o
+problema e os objetivos do projeto de análise de dados, além de ser
+importante habilidades de comunicação interpessoal para contato com
+outras pessoas técnicas e não-técnicas.
+
+\section{Dados}\label{dados}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/dados_ex.png}
+
+}
+
+\end{figure}%
+
+É a segunda etapa de um projeto de análise de dados, onde o objetivo é,
+a partir de um problema definido, identificar quais dados podem ser
+úteis para o desenvolvimento de uma solução.~
+
+Os dados podem ser disponibilizados internamente ou externamente,
+portanto essa etapa também compreende os procedimentos de coleta dos
+dados necessários.
+
+\begin{description}
+\item[\textbf{Por exemplo:}]
+\emph{No caso de queda de engajamento de usuários da Netflix, o analista
+de dados poderia coletar internamente dados históricos de tempo de uso,
+horas assistidas, categorias e temas de títulos assistidos,
+atores/diretores do título, dados socioeconômicos como região, idioma,
+gênero e etc. sobre os usuários.}
+\end{description}
+
+Externamente o analista de dados poderia coletar dados dos
+\emph{players} concorrentes do mercado, se houver suspeitas que o
+engajamento está sendo direcionado para outros serviços de
+\emph{streaming}.
+
+Nessa etapa já é necessário habilidades técnicas de programação,
+consultas a bancos de dados, \emph{APIs} e outras para que os dados
+possam ser disponibilizados para análise.
+
+Para aprender a coletar dados de múltiplas fontes e formatos, confira o
+curso de
+\href{https://analisemacro.com.br/curso/programacao-em-python-para-analise-de-dados/}{\textbf{Programação
+em Python para Análise de Dados}}.
+
+Ferramentas comuns utilizadas nessa etapa são as linguagens de
+programação R e Python e a linguagem de consulta SQL.~
+
+\section{Exploração}\label{explorauxe7uxe3o}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/exploracao_ex.png}
+
+}
+
+\end{figure}%
+
+Nessa etapa da análise de dados o objetivo é compreender o que está
+acontecendo ou aconteceu com os dados, identificar padrões, relações e
+anomalias que possam servir de sinal para a escolha de uma solução do
+problema.~
+
+Os dados precisam estar organizados para que possam ser analisados,
+portanto é necessário transformar os dados brutos coletados previamente
+para construir uma Tabela Analítica Base (ABT, no inglês), que servirá
+para realizar a análise exploratória dos dados, desenvolver modelos
+preditivos ou construir produtos de dados como relatórios e dashboards.
+
+\begin{description}
+\item[Por exemplo:]
+\emph{No caso da Netflix, o analista de dados poderia fazer as limpezas
+e cruzamentos de tabelas de dados necessárias, analisar a distribuição
+das variáveis, identificar a variável ``alvo'' (aquela que é utilizada
+para modelos preditivos, por exemplo), detectar valores ausentes,
+verificar valores extremos ou outliers, analisar correlações e
+autocorrelações dos dados, identificar tendências e sazonalidades,
+dentre outras análises que podem ser úteis.}
+\end{description}
+
+Nessa etapa são fundamentais conhecimentos e habilidades em estatística,
+programação e visualização de dados.
+
+O conhecimento de estatística básica pode ser fundamental para se
+destacar nesta etapa. O curso de
+\href{https://analisemacro.com.br/curso/estatistica-para-analise-de-dados-usando-python/}{\textbf{Estatística
+para Análise de Dados usando Python}} ensina todos os fundamentos
+necessários.
+
+As principais ferramentas utilizadas para essas análises são linguagens
+de programação como R e Python, pacotes de tratamento e exploração de
+dados como \texttt{tidyverse} e \texttt{pandas} e pacotes de
+visualização de dados como \texttt{ggplot2} e \texttt{matplotlib}.
+
+\section{Modelagem}\label{modelagem}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/modelagem_ex.png}
+
+}
+
+\end{figure}%
+
+Nessa etapa o objetivo é levantar e experimentar possíveis soluções
+baseadas em dados para o problema identificado previamente, podendo
+ser:~
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Simples consultas SQL para agregar e sumarizar dados e informações;
+\item
+  Análises estatísticas como testes de hipótese, análise de regressão e
+  outras;
+\item
+  Modelos econométricos para explicar relações, produzir inferências ou
+  previsões;
+\item
+  Modelos preditivos com técnicas de \emph{machine learning}.~
+\end{enumerate}
+
+A técnica escolhida depende diretamente da definição do problema e dos
+dados escolhidos, além de ser preferível, a depender do contexto,
+técnicas/soluções simples e rápidas.~
+
+No mundo real o tempo custa dinheiro e implementar algoritmos complexos
+e avançados em produção gera uma fatura no final do mês que precisa ser
+paga.
+
+\begin{description}
+\item[\textbf{Por exemplo:}]
+\emph{No caso da Netflix, o analista poderia focar, por exemplo, em uma
+solução de redução de Churn, identificando o perfil de usuários que
+cancelaram a assinatura e prevendo a probabilidade de ocorrer o
+cancelamento (risco de evasão), o que possibilita a tomada de decisão
+para minimizar essa evasão de usuários.}
+\end{description}
+
+Em outras palavras, poderiam ser empregados modelos supervisionados de
+classificação, usando técnicas de \emph{machine learning}.
+
+Aprenda mais sobre os principais modelos e técnicas de previsão no curso
+\href{https://analisemacro.com.br/curso/modelagem-e-previsao-usando-python/}{\textbf{Modelagem
+e Previsão usando Python}} da Análise Macro.
+
+Nessa etapa é fundamental o conhecimento de uma ampla gama de técnicas
+estatísticas, econométricas e de \emph{machine learning}, domínio de
+algoritmos e pacotes computacionais para implementar essas técnicas com
+linguagens de programação, como o R e o Python e, dependendo do
+contexto, conhecimento de ferramentas para processamento de Big Data.
+
+\section{Validação}\label{validauxe7uxe3o}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/validacao_ex.png}
+
+}
+
+\end{figure}%
+
+Nessa etapa o objetivo é avaliar se a solução analítica baseada em dados
+é capaz de resolver o problema, podendo ser analisadas as métricas de
+acurácia de modelos, os resultados estatísticos e econométricos de
+testes ou ainda o \emph{feedback} do usuário/\emph{stakeholder} em caso
+de soluções simples, como entrega de informações e \emph{insights} em
+relatórios/dashboards.
+
+\begin{description}
+\item[Por exemplo:]
+\emph{No caso da Netflix, o analista poderia analisar a acurácia de
+diferentes modelos usando amostras de treino/teste, validação cruzada,
+além de verificar a importância das variáveis utilizadas.}
+\end{description}
+
+O analista também deve ser capaz de fazer escolhas e tomar decisões sem
+que isso prejudique ou deturpe os resultados encontrados.
+
+Aprenda mais sobre métricas e avaliação de modelos de previsão no curso
+\href{https://analisemacro.com.br/curso/modelagem-e-previsao-usando-python/}{\textbf{Modelagem
+e Previsão usando Python}}.
+
+Nesta etapa é fundamental o conhecimento em amostragem de dados,
+interpretação estatística e programação usando linguagens como R e
+Python.
+
+\section{Implantação}\label{implantauxe7uxe3o}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{imagens/implantacao_ex.png}
+
+}
+
+\end{figure}%
+
+Na última etapa do ciclo de análise de dados o objetivo é comunicar os
+resultados do trabalho para os \emph{stakeholders} e usuários,
+permitindo a tomada de decisão baseada em dados.~
+
+Isso pode se traduzir na implementação em ambiente de produção de um
+modelo preditivo, um sistema de recomendação, uma dashboard ou relatório
+automatizado, dentre outras possibilidades.
+
+\begin{description}
+\item[\textbf{Por exemplo:}]
+\emph{No caso da Netflix, o analista poderia elaborar uma apresentação
+para os tomadores de decisão da companhia, permitindo a elaboração de
+estratégias para reter os usuários que possuem alta probabilidade de
+Churn.}
+\end{description}
+
+O modelo de classificação poderia, adicionalmente, ser implementado em
+produção para, por exemplo, automaticamente recomendar títulos ou
+oferecer descontos para usuários com probabilidade de evasão.
+
+Aprenda mais sobre a produção de relatórios e apresentações
+automatizadas com o curso
+\href{https://analisemacro.com.br/curso/producao-de-relatorios-automaticos-usando-python/}{\textbf{Produção
+de Relatórios Automáticos usando Python}}. Para ir além, confira o curso
+de
+\href{https://analisemacro.com.br/curso/producao-de-dashboards-automaticos-usando-python/}{\textbf{Produção
+de Dashboards Automáticos usando Python}} que implementa diversos
+exemplos de dashboards de análise de dados.
+
+Nesta etapa é fundamental habilidades não técnicas de comunicação
+interpessoal, apresentação e argumentação, além de habilidades técnicas
+de infraestrutura e serviços de \emph{Cloud} e \emph{deploy} de modelos.
+
+\bookmarksetup{startatroot}
+
+\chapter{Conclusão}\label{conclusuxe3o}
+
+O ciclo de análise de dados é vasto e complexo, mas ao mesmo tempo é uma
+metodologia poderosa para solucionar problemas usando dados.~
+
+O profissional que atua ou deseja atuar na área de dados precisa de
+diversas habilidades e conhecimentos técnicos e não técnicos, de uma
+ponta até a outra do ciclo, para agregar valor em uma empresa.~
+
+Neste ebook apresentamos uma visão geral sobre o processo de análise de
+dados, exemplos de aplicações e uso e as habilidades e ferramentas
+necessárias para trabalhar na área.
+
+\section{\texorpdfstring{\textbf{Quer aprender
+mais?}}{Quer aprender mais?}}\label{quer-aprender-mais}
+
+\href{https://analisemacro.com.br/boletim-am/}{\textbf{Clique aqui para
+fazer seu cadastro no Boletim AM e baixar códigos de análise de dados}},
+além de receber novos exercícios com exemplos reais envolvendo as áreas
+de:
+
+\begin{itemize}
+\item
+  \emph{Data Science}
+\item
+  Econometria
+\item
+  \emph{Machine Learning}
+\item
+  Macroeconomia Aplicada
+\item
+  Finanças Quantitativas e
+\item
+  Políticas Públicas
+\end{itemize}
+
+Toda semana novos exercícios aplicados usando Python, diretamente no seu
+e-mail!
+
+
+\backmatter
+
+\end{document}
