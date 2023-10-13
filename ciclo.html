@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./conclusao.html" rel="next">
 <link href="./introducao.html" rel="prev">
+<link href="./imagens/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -95,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./imagens/logo_am.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./"><strong>O ciclo de análise de dados</strong></a> 
@@ -220,6 +221,13 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div>
+<img src="imagens/ciclo_dados.png" id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="img-fluid quarto-figure-center figure-img">
+</div>
+</figure>
+</div>
 <p>O que chamamos de ciclo de análise de dados é uma metodologia de trabalho para otimizar e guiar o processo de analisar dados, desde a definição do problema a ser resolvido até a implementação da solução baseada em dados.&nbsp;</p>
 <p>É um ciclo porque, na prática, resolver problemas com dados não é como caminhar em linha reta do ponto A até o ponto B.&nbsp;</p>
 <p>O dia a dia de análise de dados é cheio de idas e vindas, tentativas e erros, pois há muitas pedras no caminho e algumas são difíceis de ultrapassar.&nbsp;</p>
@@ -233,23 +241,18 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Alguns destes obstáculos para analisar dados podem ser melhor contornados se houver uma visão clara do caminho a ser percorrido.&nbsp;</p>
 <p>Dessa forma, o ciclo de análise de dados é como um mapa que o analista pode utilizar para pegar um problema, analisar os dados e entregar uma solução.</p>
+<dl>
+<dt><strong>Por exemplo:</strong></dt>
+<dd>
+<p><em>Se você é um analista econômico, o ciclo de análise de dados compreende todo o processo de extração, processamento, análise e apresentação de dados de conjuntura econômica, com vistas a fornecer informações atualizadas e relevantes para o seu público alvo.</em></p>
+</dd>
+</dl>
+<p>Para saber mais sobre análise econômica, o curso de <a href="https://analisemacro.com.br/curso/analise-de-conjuntura-usando-python/"><strong>Análise de Conjuntura usando Python</strong></a> ensina todas estas etapas de maneira sistemática.</p>
 <p>Entender a fundo o ciclo de análise de dados é fundamental para conseguir entregar soluções e informações a partir de dados.&nbsp;</p>
 <p>Portanto, um analista de dados deve ser capaz de mapear mentalmente, dado um contexto, essas etapas para desenvolver uma solução a partir de dados.</p>
-<div id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div>
-<img src="imagens/ciclo_dados.png" id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="img-fluid quarto-figure-center figure-img">
-</div>
-</figure>
-</div>
 <p>Vamos dar uma olhada nas etapas?</p>
 <section id="objetivo" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="objetivo"><span class="header-section-number">2.1</span> Objetivo</h2>
-<p>É a primeira etapa de um projeto de análise de dados, onde há um contexto/situação na área de atuação do analista de onde surge um problema a ser resolvido.&nbsp;</p>
-<p>É papel do analista de dados, com apoio de outros atores envolvidos, identificar esse problema de forma clara para prosseguir com uma solução analítica de dados com determinados objetivos.</p>
-<p><strong>Por exemplo:</strong></p>
-<p><em>Você é analista de dados na Netflix e o setor que monitora o engajamento do usuário (tempo de uso, nº de títulos assistidos, etc.) no serviço de streaming percebe uma queda em várias métricas, o que pode ser um prenúncio de cancelamento de assinaturas.</em></p>
-<p><em>Nesse caso o problema é a queda de engajamento e o objetivo poderia ser aumentar o engajamento com vistas a evitar cancelamento de assinaturas.</em></p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-2" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -257,14 +260,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
-<p>Nessa etapa é fundamental a expertise de negócio para definir o problema e os objetivos do projeto de análise de dados, além de ser importante habilidades de comunicação interpessoal para contato com outras pessoas técnicas e não-técnicas.</p>
+<p>É a primeira etapa de um projeto de análise de dados, onde há um contexto/situação na área de atuação do analista de onde surge um problema a ser resolvido.&nbsp;</p>
+<p>É papel do analista de dados, com apoio de outros atores envolvidos, identificar esse problema de forma clara para prosseguir com uma solução analítica de dados com determinados objetivos.</p>
+<dl>
+<dt><strong>Por exemplo:</strong></dt>
+<dd>
+<p><em>Você é analista de dados na Netflix e o setor que monitora o engajamento do usuário (tempo de uso, nº de títulos assistidos, etc.) no serviço de streaming percebe uma queda em várias métricas, o que pode ser um prenúncio de cancelamento de assinaturas.</em></p>
+</dd>
+</dl>
+<p>Nesse caso o problema é a queda de engajamento e o objetivo poderia ser aumentar o engajamento com vistas a evitar cancelamento de assinaturas.</p>
+<p>Nessa etapa é fundamental a <em>expertise</em> de negócio para definir o problema e os objetivos do projeto de análise de dados, além de ser importante habilidades de comunicação interpessoal para contato com outras pessoas técnicas e não-técnicas.</p>
 </section>
 <section id="dados" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="dados"><span class="header-section-number">2.2</span> Dados</h2>
-<p>É a segunda etapa de um projeto de análise de dados, onde o objetivo é, a partir de um problema definido, identificar quais dados podem ser úteis para o desenvolvimento de uma solução.&nbsp;</p>
-<p>Os dados podem ser disponibilizados internamente ou externamente, portanto essa etapa também compreende os procedimentos de coleta dos dados necessários.</p>
-<p>No exemplo de queda de engajamento de usuários da Netflix, o analista de dados poderia coletar internamente dados históricos de tempo de uso, horas assistidas, categorias e temas de títulos assistidos, atores/diretores do título, dados socioeconômicos como região, idioma, gênero e etc. sobre os usuários.&nbsp;</p>
-<p>Externamente o analista de dados poderia coletar dados dos players concorrentes do mercado, se houver suspeitas que o engajamento está sendo direcionado para outros serviços de streaming.</p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-3" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -272,14 +280,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
-<p>Nessa etapa já é necessário habilidades técnicas de programação, consultas a bancos de dados, APIs e outras para que os dados possam ser disponibilizados para análise.&nbsp;</p>
+<p>É a segunda etapa de um projeto de análise de dados, onde o objetivo é, a partir de um problema definido, identificar quais dados podem ser úteis para o desenvolvimento de uma solução.&nbsp;</p>
+<p>Os dados podem ser disponibilizados internamente ou externamente, portanto essa etapa também compreende os procedimentos de coleta dos dados necessários.</p>
+<dl>
+<dt><strong>Por exemplo:</strong></dt>
+<dd>
+<p><em>No caso de queda de engajamento de usuários da Netflix, o analista de dados poderia coletar internamente dados históricos de tempo de uso, horas assistidas, categorias e temas de títulos assistidos, atores/diretores do título, dados socioeconômicos como região, idioma, gênero e etc. sobre os usuários.</em></p>
+</dd>
+</dl>
+<p>Externamente o analista de dados poderia coletar dados dos <em>players</em> concorrentes do mercado, se houver suspeitas que o engajamento está sendo direcionado para outros serviços de <em>streaming</em>.</p>
+<p>Nessa etapa já é necessário habilidades técnicas de programação, consultas a bancos de dados, <em>APIs</em> e outras para que os dados possam ser disponibilizados para análise.</p>
+<p>Para aprender a coletar dados de múltiplas fontes e formatos, confira o curso de <a href="https://analisemacro.com.br/curso/programacao-em-python-para-analise-de-dados/"><strong>Programação em Python para Análise de Dados</strong></a>.</p>
 <p>Ferramentas comuns utilizadas nessa etapa são as linguagens de programação R e Python e a linguagem de consulta SQL.&nbsp;</p>
 </section>
 <section id="exploração" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="exploração"><span class="header-section-number">2.3</span> Exploração</h2>
-<p>Nessa etapa da análise de dados o objetivo é compreender o que está acontecendo ou aconteceu com os dados, identificar padrões, relações e anomalias que possam servir de sinal para a escolha de uma solução do problema.&nbsp;</p>
-<p>Os dados precisam estar organizados para que possam ser analisados, portanto é necessário transformar os dados brutos coletados previamente para construir uma Tabela Analítica Base (ABT, no inglês), que servirá para realizar a análise exploratória dos dados, desenvolver modelos preditivos ou construir produtos de dados como relatórios e dashboards.</p>
-<p>No exemplo anterior da Netflix, o analista de dados poderia fazer as limpezas e cruzamentos de tabelas de dados necessárias, analisar a distribuição das variáveis, identificar a variável “alvo” (aquela que é utilizada para modelos preditivos, por exemplo), detectar valores ausentes, verificar valores extremos ou outliers, analisar correlações e autocorrelações dos dados, identificar tendências e sazonalidades, dentre outras análises que podem ser úteis.</p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-4" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -287,21 +302,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
-<p>Nessa etapa são fundamentais conhecimentos e habilidades em estatística, programação e visualização de dados.&nbsp;</p>
-<p>As principais ferramentas utilizadas para essas análises são linguagens de programação como R e Python, pacotes de tratamento e exploração de dados como tidyverse e pandas e pacotes de visualização de dados como ggplot2 e matplotlib.</p>
+<p>Nessa etapa da análise de dados o objetivo é compreender o que está acontecendo ou aconteceu com os dados, identificar padrões, relações e anomalias que possam servir de sinal para a escolha de uma solução do problema.&nbsp;</p>
+<p>Os dados precisam estar organizados para que possam ser analisados, portanto é necessário transformar os dados brutos coletados previamente para construir uma Tabela Analítica Base (ABT, no inglês), que servirá para realizar a análise exploratória dos dados, desenvolver modelos preditivos ou construir produtos de dados como relatórios e dashboards.</p>
+<dl>
+<dt>Por exemplo:</dt>
+<dd>
+<p><em>No caso da Netflix, o analista de dados poderia fazer as limpezas e cruzamentos de tabelas de dados necessárias, analisar a distribuição das variáveis, identificar a variável “alvo” (aquela que é utilizada para modelos preditivos, por exemplo), detectar valores ausentes, verificar valores extremos ou outliers, analisar correlações e autocorrelações dos dados, identificar tendências e sazonalidades, dentre outras análises que podem ser úteis.</em></p>
+</dd>
+</dl>
+<p>Nessa etapa são fundamentais conhecimentos e habilidades em estatística, programação e visualização de dados.</p>
+<p>O conhecimento de estatística básica pode ser fundamental para se destacar nesta etapa. O curso de <a href="https://analisemacro.com.br/curso/estatistica-para-analise-de-dados-usando-python/"><strong>Estatística para Análise de Dados usando Python</strong></a> ensina todos os fundamentos necessários.</p>
+<p>As principais ferramentas utilizadas para essas análises são linguagens de programação como R e Python, pacotes de tratamento e exploração de dados como <code>tidyverse</code> e <code>pandas</code> e pacotes de visualização de dados como <code>ggplot2</code> e <code>matplotlib</code>.</p>
 </section>
 <section id="modelagem" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="modelagem"><span class="header-section-number">2.4</span> Modelagem</h2>
-<p>Nessa etapa o objetivo é levantar e experimentar possíveis soluções baseadas em dados para o problema identificado previamente, podendo ser:&nbsp;</p>
-<ol type="1">
-<li><p>Simples consultas SQL para agregar e sumarizar dados e informações;</p></li>
-<li><p>Análises estatísticas como testes de hipótese, análise de regressão e outras;</p></li>
-<li><p>Modelos econométricos para explicar relações, produzir inferências ou previsões;</p></li>
-<li><p>Modelos preditivos com técnicas de machine learning.&nbsp;</p></li>
-</ol>
-<p>A técnica escolhida depende diretamente da definição do problema e dos dados escolhidos, além de ser preferível, a depender do contexto, técnicas/soluções simples e rápidas.&nbsp;</p>
-<p>No mundo real o tempo custa dinheiro e implementar algoritmos complexos e avançados em produção gera uma fatura no final do mês que precisa ser paga.</p>
-<p>No exemplo anterior da Netflix, o analista poderia focar, por exemplo, em uma solução de redução de Churn, identificando o perfil de usuários que cancelaram a assinatura e prevendo a probabilidade de ocorrer o cancelamento (risco de evasão), o que possibilita a tomada de decisão para minimizar essa evasão de usuários.&nbsp;</p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-5" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -309,13 +323,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
-<p>Em outras palavras, poderiam ser empregados modelos supervisionados de classificação, usando técnicas de machine learning.</p>
-<p>Nessa etapa é fundamental o conhecimento de uma ampla gama de técnicas estatísticas, econométricas e de machine learning, domínio de algoritmos e pacotes computacionais para implementar essas técnicas com linguagens de programação, como o R e o Python e, dependendo do contexto, conhecimento de ferramentas para processamento de Big Data.</p>
+<p>Nessa etapa o objetivo é levantar e experimentar possíveis soluções baseadas em dados para o problema identificado previamente, podendo ser:&nbsp;</p>
+<ol type="1">
+<li><p>Simples consultas SQL para agregar e sumarizar dados e informações;</p></li>
+<li><p>Análises estatísticas como testes de hipótese, análise de regressão e outras;</p></li>
+<li><p>Modelos econométricos para explicar relações, produzir inferências ou previsões;</p></li>
+<li><p>Modelos preditivos com técnicas de <em>machine learning</em>.&nbsp;</p></li>
+</ol>
+<p>A técnica escolhida depende diretamente da definição do problema e dos dados escolhidos, além de ser preferível, a depender do contexto, técnicas/soluções simples e rápidas.&nbsp;</p>
+<p>No mundo real o tempo custa dinheiro e implementar algoritmos complexos e avançados em produção gera uma fatura no final do mês que precisa ser paga.</p>
+<dl>
+<dt><strong>Por exemplo:</strong></dt>
+<dd>
+<p><em>No caso da Netflix, o analista poderia focar, por exemplo, em uma solução de redução de Churn, identificando o perfil de usuários que cancelaram a assinatura e prevendo a probabilidade de ocorrer o cancelamento (risco de evasão), o que possibilita a tomada de decisão para minimizar essa evasão de usuários.</em></p>
+</dd>
+</dl>
+<p>Em outras palavras, poderiam ser empregados modelos supervisionados de classificação, usando técnicas de <em>machine learning</em>.</p>
+<p>Aprenda mais sobre os principais modelos e técnicas de previsão no curso <a href="https://analisemacro.com.br/curso/modelagem-e-previsao-usando-python/"><strong>Modelagem e Previsão usando Python</strong></a> da Análise Macro.</p>
+<p>Nessa etapa é fundamental o conhecimento de uma ampla gama de técnicas estatísticas, econométricas e de <em>machine learning</em>, domínio de algoritmos e pacotes computacionais para implementar essas técnicas com linguagens de programação, como o R e o Python e, dependendo do contexto, conhecimento de ferramentas para processamento de Big Data.</p>
 </section>
 <section id="validação" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="validação"><span class="header-section-number">2.5</span> Validação</h2>
-<p>Nessa etapa o objetivo é avaliar se a solução analítica baseada em dados é capaz de resolver o problema, podendo ser analisadas as métricas de acurácia de modelos, os resultados estatísticos e econométricos de testes ou ainda o feedback do usuário / stakeholder em caso de soluções simples, como entrega de informações e insights em relatórios/dashboards.</p>
-<p>No exemplo anterior da Netflix, o analista poderia analisar a acurácia de diferentes modelos usando amostras de treino/teste, validação cruzada, além de verificar a importância das variáveis utilizadas.&nbsp;</p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-6" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -323,14 +351,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
+<p>Nessa etapa o objetivo é avaliar se a solução analítica baseada em dados é capaz de resolver o problema, podendo ser analisadas as métricas de acurácia de modelos, os resultados estatísticos e econométricos de testes ou ainda o <em>feedback</em> do usuário/<em>stakeholder</em> em caso de soluções simples, como entrega de informações e <em>insights</em> em relatórios/dashboards.</p>
+<dl>
+<dt>Por exemplo:</dt>
+<dd>
+<p><em>No caso da Netflix, o analista poderia analisar a acurácia de diferentes modelos usando amostras de treino/teste, validação cruzada, além de verificar a importância das variáveis utilizadas.</em></p>
+</dd>
+</dl>
 <p>O analista também deve ser capaz de fazer escolhas e tomar decisões sem que isso prejudique ou deturpe os resultados encontrados.</p>
+<p>Aprenda mais sobre métricas e avaliação de modelos de previsão no curso <a href="https://analisemacro.com.br/curso/modelagem-e-previsao-usando-python/"><strong>Modelagem e Previsão usando Python</strong></a>.</p>
 <p>Nesta etapa é fundamental o conhecimento em amostragem de dados, interpretação estatística e programação usando linguagens como R e Python.</p>
 </section>
 <section id="implantação" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="implantação"><span class="header-section-number">2.6</span> Implantação</h2>
-<p>Na última etapa do ciclo de análise de dados o objetivo é comunicar os resultados do trabalho para os stakeholders e usuários, permitindo a tomada de decisão baseada em dados.&nbsp;</p>
-<p>Isso pode se traduzir na implementação em ambiente de produção de um modelo preditivo, um sistema de recomendação, uma dashboard ou relatório automatizado, dentre outras possibilidades.</p>
-<p>No exemplo anterior da Netflix, o analista poderia elaborar uma apresentação para os tomadores de decisão da companhia, permitindo a elaboração de estratégias para reter os usuários que possuem alta probabilidade de Churn.&nbsp;</p>
 <div id="fig-539a35d47e664c97a50115a146a7f1bd-7" class="quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div>
@@ -338,8 +371,17 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </figure>
 </div>
+<p>Na última etapa do ciclo de análise de dados o objetivo é comunicar os resultados do trabalho para os <em>stakeholders</em> e usuários, permitindo a tomada de decisão baseada em dados.&nbsp;</p>
+<p>Isso pode se traduzir na implementação em ambiente de produção de um modelo preditivo, um sistema de recomendação, uma dashboard ou relatório automatizado, dentre outras possibilidades.</p>
+<dl>
+<dt><strong>Por exemplo:</strong></dt>
+<dd>
+<p><em>No caso da Netflix, o analista poderia elaborar uma apresentação para os tomadores de decisão da companhia, permitindo a elaboração de estratégias para reter os usuários que possuem alta probabilidade de Churn.</em></p>
+</dd>
+</dl>
 <p>O modelo de classificação poderia, adicionalmente, ser implementado em produção para, por exemplo, automaticamente recomendar títulos ou oferecer descontos para usuários com probabilidade de evasão.</p>
-<p>Nesta etapa é fundamental habilidades não técnicas de comunicação interpessoal, apresentação e argumentação, além de habilidades técnicas de infraestrutura e serviços de Cloud e deploy de modelos.</p>
+<p>Aprenda mais sobre a produção de relatórios e apresentações automatizadas com o curso <a href="https://analisemacro.com.br/curso/producao-de-relatorios-automaticos-usando-python/"><strong>Produção de Relatórios Automáticos usando Python</strong></a>. Para ir além, confira o curso de <a href="https://analisemacro.com.br/curso/producao-de-dashboards-automaticos-usando-python/"><strong>Produção de Dashboards Automáticos usando Python</strong></a> que implementa diversos exemplos de dashboards de análise de dados.</p>
+<p>Nesta etapa é fundamental habilidades não técnicas de comunicação interpessoal, apresentação e argumentação, além de habilidades técnicas de infraestrutura e serviços de <em>Cloud</em> e <em>deploy</em> de modelos.</p>
 
 
 </section>
